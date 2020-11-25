@@ -105,7 +105,7 @@ body {
 .header__search-input:focus {
     background: #fff;
     outline: none;
-    border: none;
+    border: 1px solid #444D56;
     color: #24292E;
     width: calc(20rem + 5vw);
 }

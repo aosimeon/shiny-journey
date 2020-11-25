@@ -5,8 +5,10 @@ const hamburgerMenu = document.querySelector(".header__hamburger-menu");
 
 // Changes "Pull requests" to "Pulls"
 window.addEventListener('resize', () => {
-    if (window.innerWidth <= 910) {
+    if (window.innerWidth <= 910 && window.innerWidth > 850) {
         pulls.innerText = "Pulls";
+    } else if (window.innerWidth <= 850) {
+        pulls.innerText = "Pull requests"
     } else {
         pulls.innerText = "Pull requests"
     }
@@ -17,16 +19,6 @@ window.addEventListener('resize', () => {
     } else {
         headerSearch.style.display = "none";
         primaryNav.style.display = "none";
-    }
-});
-
-window.addEventListener('resize', () => {
-    if (window.innerWidth <= 910) {
-        pulls.innerText = "Pulls";
-    } else if (window.innerWidth <= 850) {
-        pulls.innerText = "Pull requests"
-    } else {
-        pulls.innerText = "Pull requests"
     }
 });
 
