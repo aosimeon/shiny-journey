@@ -4,7 +4,7 @@ const primaryNav = document.querySelector(".header__pri-nav");
 const hamburgerMenu = document.querySelector(".header__hamburger-menu");
 const mainResults = document.querySelector(".main__results");
 const repoCount = document.querySelector(".main__repo-count");
-const accessToken = "03b1d0e034b7fa4e626e05549328fd13cbad6467";
+const accessToken = process.env.GH_ACCESS_TOKEN;
 const apiEndPoint = "https://api.github.com/graphql";
 const query = `
     query {
