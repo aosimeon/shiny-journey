@@ -13,26 +13,26 @@ window.addEventListener('resize', () => {
         pulls.innerText = "Pull requests"
     }
 
-    if (window.innerWidth >= 850) {
-        headerSearch.style.display = "block";
-        primaryNav.style.display = "block";
-    } else {
-        headerSearch.style.display = "none";
-        primaryNav.style.display = "none";
-    }
+    // if (window.innerWidth > 850) {
+    //     headerSearch.style.display = "block";
+    //     primaryNav.style.display = "block";
+    // } else {
+    //     headerSearch.style.display = "none";
+    //     primaryNav.style.display = "none";
+    // }
 });
 
 // Mobile menu
-let isMenu = true;
+let isMenu = false;
 hamburgerMenu.addEventListener('click', () => {
-   if (isMenu) {
+   if (!isMenu) {
        headerSearch.style.display = "block";
        primaryNav.style.display = "block";
-       isMenu = false;
+       isMenu = true;
    } else {
        headerSearch.style.display = "none";
        primaryNav.style.display = "none";
-       isMenu = true;
+       isMenu = false;
    }
 });
 
