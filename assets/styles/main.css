@@ -320,6 +320,15 @@ body {
 .main__result-details .fa-circle {
     color: #2C3E50;
 }
+.main__private {
+    color: #6A737D;
+    font-size: 0.8rem;
+    border: 1px solid #E1E4E8;
+    border-radius: 6px;
+    padding: 0.2rem 0.5rem;
+    font-weight: normal;
+    vertical-align: middle;
+}
 
 /* Media Queries */
 @media screen and (max-width: 850px) {
