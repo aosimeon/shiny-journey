@@ -8,14 +8,13 @@ html {
     font-size: 14px;
 }
 
+/* Body Styles */
 body {
     margin: 0;
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
     color: #24292E;
     font-size: 14px;
 }
-
-/* Body Styles */
 .body {
     width: 90%;
     margin: 0 auto;
@@ -36,22 +35,18 @@ body {
     font-size: 1rem;
     width: 100%;
 }
-
 .header .header__logo-img {
     font-size: 2.4rem;
 }
-
 .header__hamburger-menu {
     display: none;
 }
-
 .header__mobile-notif {
     display: none;
     position: relative;
     text-align: right;
     font-size: 1.2rem;
 }
-
 .header__mobile-notif .fa-circle {
     font-size: 0.6rem;
     position: absolute;
@@ -61,15 +56,12 @@ body {
     color: transparent;
     border-radius: 50%;
 }
-
 .header__search {
     margin: 0 1rem;
 }
-
 .header__search-form {
     position: relative;
 }
-
 .header__search-input {
     border: 1px solid #444D56;
     border-radius: 5px;
@@ -80,7 +72,6 @@ body {
     caret-color: #444D56;
     transition: width 0.2s ease-in;
 }
-
 .header__search-slash {
     position: absolute;
     top: 5px;
@@ -92,16 +83,13 @@ body {
     font-style: italic;
     font-size: 0.9em;
 }
-
 .header__search-input:focus + .header__search-slash {
     display: none;
 }
-
 .header__search-input::placeholder {
     color: #C8C9CB;
     font-size: 14px;
 }
-
 .header__search-input:focus {
     background: #fff;
     outline: none;
@@ -109,35 +97,32 @@ body {
     color: #24292E;
     width: calc(20rem + 5vw);
 }
-
 .header__search-input:focus::placeholder {
     color: #444D56;
 }
-
 .header__pri-nav-list, .header__sec-nav-list {
     display: flex;
     list-style-type: none;
     align-items: center;
 }
-
+.header__pri-nav-item {
+    margin-right: 1rem;
+    font-weight: 600;
+}
 .header__pri-nav-item, .header__sec-nav-item {
     transition: color 0.2s ease-in-out;
     cursor: pointer;
 }
-
 .header__pri-nav-item:hover, .header__sec-nav-item:hover {
     color: #C8C9CB;
 }
-
 .header__nav-settings, .header__nav-profile, .header__nav-signout {
     display: none;
 }
-
 .header__sec-nav {
     margin-left: auto;
     font-size: 1.1rem;
 }
-
 .header__sec-nav-item {
     position: relative;
     display: flex;
@@ -148,7 +133,6 @@ body {
 .header__sec-nav-item:first-child {
     margin-right: 1rem;
 }
-
 .header__sec-nav-item .fa-circle {
     font-size: 0.55rem;
     position: absolute;
@@ -158,33 +142,23 @@ body {
     color: transparent;
     border-radius: 50%;
 }
-
 .header__sec-nav-item .fa-caret-down {
     position: absolute;
     top: 7px;
     right: -12px;
 }
-
 .header__sec-nav-item:last-child .fa-caret-down {
     top: 5px;
 }
-
-.header__pri-nav-item {
-    margin-right: 1rem;
-    font-weight: 600;
+.header__sec-nav-list .fa-caret-down {
+    font-size: 14px;
 }
-
 .header__new {
     font-size: 1.5rem;
 }
-
 .header__profile-img {
     width: 1.4rem;
     border-radius: 50%;
-}
-
-.header__sec-nav-list .fa-caret-down {
-    font-size: 14px;
 }
 
 /* Sidebar Styles */
@@ -193,17 +167,14 @@ body {
     margin-top: -2.0rem;
     z-index: 1;
 }
-
 .sidebar__img__container {
     position: relative;
 }
-
 .sidebar__img {
     width: 100%;
     border-radius: 50%;
     border: 1px solid #E5E7EA;
 }
-
 .sidebar .fa-smile-o {
     position: absolute;
     bottom: 10%;
@@ -214,21 +185,17 @@ body {
     border: 1px solid #E5E7EA;
     color: #6A737D;
 }
-
 .sidebar__name, .sidebar__username {
     display: block;
 }
-
 .sidebar__name {
     margin-top: 0.5rem;
     font-weight: 600;
     font-size: 1.8rem;
 }
-
 .sidebar__username {
     opacity: 0.7;
 }
-
 .sidebar__about {
     font-size: 16px;
 }
@@ -243,34 +210,28 @@ body {
     width: 100%;
     z-index: 0;
 }
-
 .main__header-nav-list {
     list-style-type: none;
     display: flex;
     margin: 1rem 0 0 0;
 }
-
 .main__header-nav-list i {
     opacity: 0.5;
     font-size: 0.9rem;
     margin-right: 0.3rem;
 }
-
 .main__header-nav-item {
     padding: 0 1rem;
     cursor: pointer;
 }
-
 .main__header-nav-item:hover {
     border-bottom: 0.12em solid #E5E7EA;
 }
-
 .main__header-nav-item--active {
     border-bottom: 0.12em solid #F9826C;
     padding: 0 1.7rem 1rem 1.7rem;
     font-weight: bold;
 }
-
 .main__header-nav-item--active:hover {
     border-bottom: 0.12em solid #F9826C;
 }
@@ -280,7 +241,6 @@ body {
     flex-basis: 77%;
     margin: 0 1.5rem 0 2rem;
 }
-
 .main__repo-count {
     background: #E8EAEC;
     padding: 6px;
@@ -301,7 +261,6 @@ body {
     width: 60%;
     padding: 0.5rem;
 }
-
 .main__find-repo-input:focus {
     border: 1px solid #0366d6;
     box-shadow: 0 0 5px #0366d6;
@@ -327,11 +286,9 @@ body {
     margin-bottom: 1rem;
 
  }
-
 .main__result-details {
     display: flex;
 }
-
 .main__repo-language, .main__repo-stars, .main__repo-forks, .main__repo-updated-date {
     font-size: 0.75rem;
     margin-right: 0.5rem;
@@ -351,33 +308,22 @@ body {
     padding: 0.2rem 0.5rem;
     margin-left: auto;
 }
-
 .main__repo-star-btn:hover {
     box-shadow: 0 0 10px #E1E4E8;
 }
-
 .main__repo-star-btn:focus {
     outline: none;
 }
-
 .main__repo-star-btn .fa-star {
     color: #6A737D
 }
-
 .main__result-details .fa-circle {
     color: #2C3E50;
 }
 
 /* Media Queries */
 @media screen and (max-width: 850px) {
-    .header__hamburger-menu, .header__mobile-notif {
-        display: block;
-    }
-
-    .header__hamburger-menu .fa-bars {
-        font-size: 1.2rem;
-    }
-
+    /* Header */
     .header {
         display: grid;
         justify-content: space-around;
@@ -385,77 +331,71 @@ body {
         grid-template-rows: auto;
         padding: 0.5rem 1rem;
     }
-
+    .header__hamburger-menu, .header__mobile-notif {
+        display: block;
+    }
+    .header__hamburger-menu .fa-bars {
+        font-size: 1.2rem;
+    }
     .header__logo, .header__hamburger-menu, .header__mobile-notif {
         margin: 0.5rem 0;
     }
-
     .header__logo {
         text-align: center;
     }
-
     .header .header__logo-img {
         font-size: 2.2rem;
     }
-
     .header__sec-nav {
         display: none;
     }
-
     .header__search {
         grid-column: 1/4;
         margin: 0;
         margin-top: 0.5rem;
         display: none;
     }
-
     .header__search-input {
         width: 100%;
     }
-
     .header .header__search-input:focus {
         width: 100%;
     }
-
     .header__pri-nav {
         grid-column: 1/4;
         display: none;
     }
-
     .header__pri-nav-list {
         flex-direction: column;
         align-items: flex-start;
     }
-
     .header__pri-nav-item {
         width: 100%;
         margin: 0;
         border-bottom: 1px solid #444D56;
         padding: 0.8rem 0;
     }
-
     .header__pri-nav-item:first-child {
         border-top: 1px solid #444D56;
     }
-
     .header__pri-nav-item:last-child {
         border-bottom: none;
     }
-
     .header__nav-settings, .header__nav-profile, .header__nav-signout {
         display: block;
     }
-
     .header__profile-img {
         margin-bottom: -5px;
     }
 
-/*  Body Styles  */
+    /* Body */
     .body {
         width: 100%;
         flex-direction: column;
         margin-top: 1rem;
     }
+
+    /* Sidebar */
     .sidebar {
         padding: 0.5rem 1rem;
         display: flex;
@@ -464,79 +404,76 @@ body {
         margin: 0 0;
         align-items: center;
     }
-
     .sidebar__img {
         width: 100%;
     }
-
-    .main {
-        flex-basis: 100%;
-        margin: 0 0rem;
-    }
-
-    .main__results, .main__results-info {
-        margin: 0rem 1.5rem;
-    }
-
-    .main__find-repo {
-        padding-top: 1.5rem;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-    }
-
-    .main__find-repo-input {
-        width: 100%;
-    }
-
     .sidebar__img__container {
         flex-basis: 20%;
         padding-right: 1rem;
     }
-
     .sidebar__img__container .fa-smile-o {
         display: none;
     }
-
     .sidebar__names {
         flex-basis: 80%;
     }
     .sidebar__about {
         flex-basis: 100%;
     }
+    .sidebar__about {
+        font-size: 16px;
+    }
 
+    /* Main */
+    .main {
+        flex-basis: 100%;
+        margin: 0 0rem;
+    }
+    .main__results, .main__results-info {
+        margin: 0rem 1.5rem;
+    }
+    .main__find-repo {
+        padding-top: 1.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .main__find-repo-input {
+        width: 100%;
+    }
+
+    /* Main Header */
     .main__header {
         padding-left: 0;
         position: static;
     }
-
     .main__header-nav {
         overflow-x: auto;
-    }
-
-    .sidebar__about {
-        font-size: 16px;
     }
 
 }
 
 @media screen and (max-width: 580px) {
-    .main__header i {
-        display: none;
-    }
-
+    /* Header */
     .header {
         font-size: 1rem;
     }
 
-    .sidebar__name {
-        font-size: 1.5rem;
+    /* Main Header */
+    .main__header i {
+        display: none;
     }
     .main__header-nav-item {
         padding-right: 0rem;
     }
+
+    /* Sidebar */
+    .sidebar__name {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (min-width: 849px) {
+    /* Header */
     .header__search-input, .header__pri-nav {
         display: block;
     }
