@@ -4,6 +4,7 @@ dotenv.config();
 
 const pulls = document.querySelector(".header__pri-nav-item:first-child");
 const headerSearch = document.querySelector(".header__search");
+const mainHeader = document.querySelector(".main__header");
 const primaryNav = document.querySelector(".header__pri-nav");
 const hamburgerMenu = document.querySelector(".header__hamburger-menu");
 const mainResults = document.querySelector(".main__results");
@@ -118,4 +119,27 @@ hamburgerMenu.addEventListener('click', () => {
    }
 });
 
+// Main Header onScroll Effect
+window.addEventListener('scroll', function() {
+    if (window.innerWidth > 850 && window.pageYOffset > 84) {
+        mainHeader.style.position = "fixed";
+        mainHeader.style.top = "0";
+    } else if (window.pageYOffset < 84 && window.innerWidth > 850) {
+        mainHeader.style.position = "absolute";
+        mainHeader.style.top = "6rem";
+    } else if (window.innerWidth < 850) {
+        mainHeader.style.position = "static";
+    }
+});
 
+window.addEventListener('resize', function() {
+    if (window.innerWidth > 850 && window.pageYOffset > 84) {
+        mainHeader.style.position = "fixed";
+        mainHeader.style.top = "0";
+    } else if (window.pageYOffset < 84 && window.innerWidth > 850) {
+        mainHeader.style.position = "absolute";
+        mainHeader.style.top = "6rem";
+    } else if (window.innerWidth < 850) {
+        mainHeader.style.position = "static";
+    }
+});

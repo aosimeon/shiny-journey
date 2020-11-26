@@ -208,6 +208,7 @@ body {
     padding-left: 28%;
     border-bottom: 1px solid #E1E4E8;
     width: 100%;
+    background-color: #fff;
     z-index: 0;
 }
 .main__header-nav-list {
