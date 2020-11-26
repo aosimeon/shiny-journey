@@ -1,7 +1,7 @@
 {
   "name": "buycoinsprj",
   "version": "1.0.0",
-  "main": "index.html",
+  "main": "dist/index.html",
   "repository": "git@github.com:thewhitechild/shiny-journey.git",
   "author": "Amoo Olusola Simeon",
   "license": "MIT",
