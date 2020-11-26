@@ -1,0 +1,17 @@
+{
+  "name": "buycoinsprj",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:thewhitechild/shiny-journey.git",
+  "author": "Amoo Olusola Simeon",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "parcel serve index.html",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "parcel": "^2.0.0-beta.1"
+  }
+}

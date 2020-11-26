@@ -1,8 +1,11 @@
-# IntelliJ project files
 .idea
 *.iml
 out
 gen
+.env
+.parcel-cache
+dist
+node_modules
 
 
 

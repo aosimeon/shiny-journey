@@ -1,3 +1,7 @@
+import dotenv from "dotenv";
+
+dotenv.config();
+
 const pulls = document.querySelector(".header__pri-nav-item:first-child");
 const headerSearch = document.querySelector(".header__search");
 const primaryNav = document.querySelector(".header__pri-nav");
@@ -5,7 +9,7 @@ const hamburgerMenu = document.querySelector(".header__hamburger-menu");
 const mainResults = document.querySelector(".main__results");
 const repoCount = document.querySelector(".main__repo-count");
 const accessToken = process.env.GH_ACCESS_TOKEN;
-const apiEndPoint = "https://api.github.com/graphql";
+const apiEndpoint = process.env.API_ENDPOINT;
 const query = `
     query {
       viewer {
@@ -32,8 +36,8 @@ const query = `
 `
 
 // Get user and repo details from Github.
-async function getRepoUserData(apiEndPoint, accessToken) {
-    const response = await fetch(apiEndPoint, {
+async function getRepoUserData(apiEndpoint, accessToken) {
+    const response = await fetch(apiEndpoint, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -48,10 +52,10 @@ async function getRepoUserData(apiEndPoint, accessToken) {
 // Update page with user and repo details.
 function updateRepoUserData(repoUserData) {
     console.log(repoUserData.data.viewer.repositories.nodes)
-    for (repo of repoUserData.data.viewer.repositories.nodes.reverse()) {
+    for (let repo of repoUserData.data.viewer.repositories.nodes.reverse()) {
         function renderRepoLanguages() {
             let languages = "";
-            for (language of repo.languages.nodes) {
+            for (let language of repo.languages.nodes) {
                languages += `
                 <span class="main__repo-language"><i style="color: ${language.color}" class="fas fa-circle"></i> ${language.name}</span>
                ` ;
@@ -82,7 +86,7 @@ function updateRepoUserData(repoUserData) {
 }
 
 // Get user and repo details from api endpoint.
-getRepoUserData(apiEndPoint, accessToken)
+getRepoUserData(apiEndpoint, accessToken)
     .then(data => {
         console.log(data);
         console.log(data.data.viewer.repositories.nodes);
